@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body>
+    
+    <form name="alertform" id="foras"> 
+        Name:<input type="text" name="firstname"><br>
+        Age: <input type="number" name="age"><br>
+        <input type="button" value="submit" onclick="f1()">
+    </form>
+    <script>
+        function f1()
+        {   
+            const n=document.alertform.firstname.value;
+            if(n){
+              const pasta=`My name is ${n}`
+            document.getElementById("foras").append(pasta);
+            }
+            else
+            {
+                alert("No Name ")
+            }
+        }
+    </script>
+</body>
+</html>
